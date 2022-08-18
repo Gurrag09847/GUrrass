@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@600&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+  box-sizing: border-box;
+  
+}
+
+@font-face {
+    font-family: "Itim";
+    src: url(./Font/Itim-Regular.ttf);
+    color: #000;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: cornflowerblue;
+    font-family: "Itim";
+  }
+
+.countries {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    grid-gap: 50px; 
+  margin: 50px auto; 
+  max-width: 1240px; 
+  min-width: 350px; 
+ padding: 20px;
+}
+
+.country {
+    padding: 10px;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+    background-color: #E9E9E9;
+    border-radius: 12px;
+    position: relative;
+}
+
+.country.one {
+
+  padding-top: 50px;
+}
+
+.country img {
+    width: 100%;
+    display: block;
+    border-radius: 12px;
+}
+
+
+.country .title {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.country .description{
+    padding:  0 20px 20px 20px;
+    line-height: 22px;
+    padding-bottom: 50px;
+}
+
+button:hover, .back-btn:hover{
+    transform: scale(1.2);
+    text-align: center;
+}
+
+
+
+.country button {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #0DA192;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+
+  font-size: 1rem;
+  font-weight: bold;
+
+  font-family: "Itim";
+}
+
+.back-btn {
+  position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.8rem;
+    border: none;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.9;
+    margin: 10px;
+    transition: all 0.3s;
+}
